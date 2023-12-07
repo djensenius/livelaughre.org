@@ -34,9 +34,13 @@
     <h1>Live Laugh Reorg</h1>
     <img id="randomImage" src="" alt="Reorg Image">
     <script>
-        var images = ['images/reorg1.png', 'images/reorg2.png', 'images/reorg3.png', 'images/reorg4.png'];
-        var randomImage = images[Math.floor(Math.random() * images.length)];
+        var numImages = 6;
+        var images = [];
+        for (var i = 1; i <= numImages; i++) {
+            images.push('images/reorg' + i + '.png');
+        }
+        var randomImage = images[Math.floor(Math.random() * numImages)];
         document.getElementById('randomImage').src = randomImage;
-    </script
+    </script>
 </body>
 </html>
