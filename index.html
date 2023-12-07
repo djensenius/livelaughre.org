@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Laugh Re.org</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: black;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        img {
+            width: 1024px;
+            height: 1024px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Laugh Reorg</h1>
+    <img id="randomImage" src="" alt="Reorg Image">
+    <script>
+        var images = ['images/reorg1.png', 'images/reorg2.png', 'images/reorg3.png', 'images/reorg4.png'];
+        var randomImage = images[Math.floor(Math.random() * images.length)];
+        document.getElementById('randomImage').src = randomImage;
+    </script
+</body>
+</html>
